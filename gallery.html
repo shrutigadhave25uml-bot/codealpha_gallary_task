@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌄 Beautiful Image Gallery</h1>
+
+<div class="filter-buttons">
+<button onclick="filterImages('all')">All</button>
+<button onclick="filterImages('nature')">Nature</button>
+<button onclick="filterImages('city')">City</button>
+<button onclick="filterImages('animals')">Animals</button>
+</div>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/id/1018/400/300" class="nature" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1015/400/300" class="nature" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1025/400/300" class="animals" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1040/400/300" class="city" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1069/400/300" class="nature" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1074/400/300" class="city" onclick="openImage(this)">
+<img src="https://picsum.photos/id/237/400/300" class="animals" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1084/400/300" class="nature" onclick="openImage(this)">
+
+</div>
+
+<div id="lightbox">
+<span onclick="closeImage()">✖</span>
+<img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
